@@ -220,8 +220,8 @@ function applyStrings(containers) {
         //find all the elements that have title
         let locale = container.getAttribute('lang');
         //console.log('looking inside of ', locale);
-        container.querySelectorAll(`[data-key]`).forEach(element => {
-            let key = element.getAttribute('data-key');
+        container.querySelectorAll(`[title]`).forEach(element => {
+            let key = element.getAttribute('title');
             //console.log(element);
             //console.log(key);
             let lang = locale.substr(0, 2); //first 2 characters
